@@ -1,0 +1,12 @@
+.error{
+  color: red;
+  font-weight: bold;
+}
+.c1{
+  background-color: #ff0000; /* Red */
+  color: #ffffff; /* White text */ 
+}
+.c2{
+  background-color: #00ff00; /* Green */
+  color: hsl(0, 78%, 51%); /* Black text */ 
+}

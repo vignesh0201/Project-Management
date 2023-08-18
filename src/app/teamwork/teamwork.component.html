@@ -1,1 +1,22 @@
-<p>teamwork works!</p>
+<div class="container">
+  <h1>Registration</h1>
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" >
+    <div class="mb-3">
+      <label for="username" class="form-label">Username</label>
+      <input type="text" formControlName="username" id="username" class="form-control" placeholder="Enter the username">
+      <span class="error" *ngIf="username?.touched && username?.invalid">Username is invalid</span>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" formControlName="password" id="password" class="form-control" placeholder="Enter the password">
+      <span class="error" *ngIf="password?.touched && password?.invalid">Password is invalid</span>
+    </div>
+    <div class="mb-3">
+      <label for="role" class="form-label">Role</label>
+      <input type="text" formControlName="role" id="role" class="form-control" placeholder="admin/team">
+      <span class="error" *ngIf="role?.touched && role?.invalid ">Enter a valid response</span>    
+ </div> 
+     <button [disabled]="!registerForm.valid">register</button>
+</form>
+</div>
+
