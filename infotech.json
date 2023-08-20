@@ -24,34 +24,16 @@
       "id": 5
     },
     {
-      "username": "anu",
-      "password": "998877",
+      "username": "deepika",
+      "password": "99887766",
       "role": "admin",
       "id": 6
     },
     {
-      "username": "Chandra",
-      "password": "99887766",
-      "role": "admin",
-      "id": 7
-    },
-    {
-      "username": "haniiii",
-      "password": "1234567890",
-      "role": "user",
-      "id": 8
-    },
-    {
-      "username": "Aarthi3333",
-      "password": "123456789",
-      "role": "admin",
-      "id": 9
-    },
-    {
-      "username": "Aarthiii",
-      "password": "123456789",
+      "username": "anu",
+      "password": "123456",
       "role": "team",
-      "id": 10
+      "id": 7
     }
   ],
   "comments": [

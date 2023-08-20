@@ -13,17 +13,20 @@ import { AppsComponent } from './apps/apps.component';
 import { MatIconModule } from '@angular/material/icon';
 import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import {CdkDrag, CdkDropList} from '@angular/cdk/drag-drop';
+import {CdkDrag, CdkDropList, DragDropModule} from '@angular/cdk/drag-drop';
 import { NgFor } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { LoginComponent } from './login/login.component';
-
+import { MatInputModule } from '@angular/material/input';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatCardModule} from '@angular/material/card';
+import { CreatedialogComponent } from './apps/createdialog/createdialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { CardComponent } from './card/card.component';
 
 
 
@@ -36,26 +39,34 @@ import {MatCardModule} from '@angular/material/card';
     TeamsComponent,
     AppsComponent,
     TeamworkComponent,
-    LoginComponent
+    LoginComponent,
+    CreatedialogComponent,
+    CardComponent
   ],
   imports: [
-      BrowserModule,
-      AppRoutingModule,
-      BrowserAnimationsModule,
-      MatIconModule,
-      ReactiveFormsModule,
-      MatFormFieldModule,
-      HttpClientModule,
-      FormsModule,
-      CdkDrag,
-      CdkDropList,
-      MatCardModule, 
-      MatDividerModule, 
-      MatIconModule, 
-      MatProgressBarModule
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatDialogModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    HttpClientModule,
+    FormsModule,
+    CdkDrag,
+    CdkDropList,
+    MatCardModule,
+    MatDividerModule,
+    MatIconModule, 
+      MatProgressBarModule,
+      DragDropModule,
+      MatInputModule,
+  
     ],
     
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  
+ }

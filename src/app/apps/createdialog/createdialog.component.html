@@ -1,0 +1,29 @@
+
+<div class="container">
+ 
+  <h2>Create a New Project</h2>
+  <form [formGroup]="projectForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <mat-form-field>
+      <label for="projectName">Project Name</label>
+      
+      <input type="text" class="form-control" id="projectName" formControlName="projectName">
+      <div *ngIf="projectForm.get('projectName')?.hasError('required') && projectForm.get('projectName')?.untouched" class="text-danger">
+        Project Name is required.
+      </div></mat-form-field>
+    </div>
+<div class="form-group">
+  <mat-form-field>
+      <label for="companyName">Company Name</label>
+      <input type="text" class="form-control" id="companyName" formControlName="companyName">
+      <div *ngIf="projectForm.get('companyName')?.hasError('required') && projectForm.get('companyName')?.touched" class="text-danger">
+        Company Name is required.
+      </div></mat-form-field>
+    </div>
+<div class="form-group">
+        <label for="comments">Comments</label>
+      <textarea class="form-control" id="comments" formControlName="comments"></textarea>
+    </div>
+<button class="btn btn-primary" [disabled]="projectForm.invalid">Submit</button>
+  </form>
+</div>

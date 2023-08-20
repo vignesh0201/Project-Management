@@ -1,3 +1,27 @@
 .example-card {
   max-width: 400px;
 }
+
+.board {
+  display: flex;
+  justify-content: space-around;
+}
+
+.todo-column,
+.in-progress-column,
+.done-column {
+  width: 30%;
+  min-height: 300px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-item {
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin: 5px 0;
+  background-color: #fff;
+}

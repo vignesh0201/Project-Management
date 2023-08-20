@@ -42,7 +42,7 @@ export class LoginComponent {
         } else {
           alert('Invalid user');
         }
-        this.router.navigate(['/projects']);
+        this.router.navigate(['/teams']);
       });
     }
   }

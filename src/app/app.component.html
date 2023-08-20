@@ -1,31 +1,39 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div><nav class="navbar navbar-expand-lg navbar-light bg-light">
    
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="navbar-brand" href="#jirasoftware" routerLink="/">Tvm InfoTech</a>
-        </li>
-        <li class="nav-item">
+  <div class="collapse navbar-collapse nav-bar justify-content-center" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <div class="d-flex align-items-center">
+          <mat-icon  aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+          <div class="nav-item active d-flex align-items-center">
+           
+            <a class="navbar-brand" href="#jirasoftware" routerLink="/">Tvm InfoTech</a>
+          </div>
+        </div>
+        
+        <div class="d-flex align-items-center">
           <a class="nav-link" href="#teamwork" routerLink="/teamwork">SignUp</a>
-        </li>
-        <li class="nav-item">
+        </div>
+        <!-- <div class="d-flex align-items-center">
           <a class="nav-link" href="#login" routerLink="/login">Logins</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects" routerLink="/projects">projects</a>
-        </li>
-       <li class="nav-item">
+        </div> -->
+        <div class="d-flex align-items-center">
+          <div class="nav-item">
+            <a class="nav-link" href="#projects" routerLink="/projects">projects</a>
+          </div>  
+       <div class="nav-item">
           <a class="nav-link" href="#dashboard" routerLink="/dashboard">dashboards</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#teams" routerLink="/teams">teams</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#apps" routerLink="/apps">apps</a>
-        </li>
-      </ul>
-      <button class="btn btn-primary">Create</button>
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="#teams" routerLink="/teams">Teams</a>
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="#apps" routerLink="/apps">AddUser</a>
+        </div>
+          <div>
+          <button class="btn btn-primary" (click)="openPopup()">Create</button>
+        </div>
+      </div>
+      
 
       <mat-form-field appearance="fill">   
         <mat-label >Search Something</mat-label>
@@ -33,10 +41,16 @@
         <mat-icon matSuffix >search</mat-icon>
          </mat-form-field>
 
-         
+      </div>  
     </div>
   </nav>
-
+</div>
    <div class="container">
     <router-outlet></router-outlet>
 </div>
+
+
+
+
+
+
