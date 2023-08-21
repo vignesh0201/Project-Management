@@ -34,6 +34,30 @@
       "password": "123456",
       "role": "team",
       "id": 7
+    },
+    {
+      "username": "saanvi",
+      "password": "99887766",
+      "role": "admin",
+      "id": 8
+    },
+    {
+      "username": "Priya",
+      "password": "123456789",
+      "role": "admin",
+      "id": 9
+    },
+    {
+      "username": "Aarthii",
+      "password": "123456789",
+      "role": "admin",
+      "id": 10
+    },
+    {
+      "username": "Anuu",
+      "password": "99887766",
+      "role": "admin",
+      "id": 11
     }
   ],
   "comments": [

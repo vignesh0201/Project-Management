@@ -1,8 +1,48 @@
 
+ <!-- <div class="kanban-container">
+  <div class="list" cdkDropList id="todo" (cdkDropListDropped)="onTaskDrop($event, 'todo')">
+    <h2>Todo</h2>
+    <div class="task" *ngFor="let task of taskLists['todo']; let i = index" cdkDrag>
+      {{ task }}
+      <button mat-icon-button color="warn" (click)="removeTask('todo', i)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+    <button mat-icon-button color="primary" (click)="addTask('todo')">
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+
+   <div class="list" cdkDropList id="wip" (cdkDropListDropped)="onTaskDrop($event, 'wip')">
+    <h2>Work in Progress</h2>
+    <div class="task" *ngFor="let task of taskLists['wip']; let i = index" cdkDrag>
+      {{ task }}
+      <button mat-icon-button color="warn" (click)="removeTask('wip', i)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <div class="list" cdkDropList id="done" (cdkDropListDropped)="onTaskDrop($event, 'done')">
+    <h2>Done</h2>
+    <div class="task" *ngFor="let task of taskLists['done']; let i = index" cdkDrag>
+      {{ task }}
+      <button mat-icon-button color="warn" (click)="removeTask('done', i)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>  -->
+
 <div class="kanban-container">
   <div class="list" cdkDropList id="todo" (cdkDropListDropped)="onTaskDrop($event, 'todo')">
     <h2>Todo</h2>
-    <div class="task" *ngFor="let task of taskLists['todo']" cdkDrag>{{ task }}</div>
+    <div class="task" *ngFor="let task of taskLists['todo']; let i = index" cdkDrag>
+      {{ task }}
+      <button mat-icon-button color="warn" (click)="removeTask('todo', i)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
     <button mat-icon-button color="primary" (click)="addTask('todo')">
       <mat-icon>add</mat-icon>
     </button>
@@ -10,14 +50,28 @@
 
   <div class="list" cdkDropList id="wip" (cdkDropListDropped)="onTaskDrop($event, 'wip')">
     <h2>Work in Progress</h2>
-    <div class="task" *ngFor="let task of taskLists['wip']" cdkDrag>{{ task }}</div>
+    <div class="task" *ngFor="let task of taskLists['wip']; let i = index" cdkDrag>
+      {{ task }}
+      <button mat-icon-button color="warn" (click)="removeTask('wip', i)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
   </div>
 
   <div class="list" cdkDropList id="done" (cdkDropListDropped)="onTaskDrop($event, 'done')">
     <h2>Done</h2>
-    <div class="task" *ngFor="let task of taskLists['done']" cdkDrag>{{ task }}</div>
+    <div class="task" *ngFor="let task of taskLists['done']; let i = index" cdkDrag>
+      {{ task }}
+      <button mat-icon-button color="warn" (click)="removeTask('done', i)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
   </div>
 </div>
+
+
+
+
 
 
 

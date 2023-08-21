@@ -1,18 +1,18 @@
-<div><nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div><nav class="navbar navbar-expand-lg navbar-light bg-primary">
    
   <div class="collapse navbar-collapse nav-bar justify-content-center" id="navbarSupportedContent">
-      <div class="navbar-nav mr-auto">
+      <div class="navbar-nav mr-auto">        
         <div class="d-flex align-items-center">
-          <mat-icon  aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+                  <mat-icon  aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
           <div class="nav-item active d-flex align-items-center">
            
-            <a class="navbar-brand" href="#jirasoftware" routerLink="/">Tvm InfoTech</a>
-          </div>
-        </div>
-        
+            <a class="navbar-brand" href="#tvminfotech" routerLink="/tvminfotech">Tvm InfoTech</a>
+             </div>
+        </div>        
+      
         <div class="d-flex align-items-center">
           <a class="nav-link" href="#teamwork" routerLink="/teamwork">SignUp</a>
-        </div>
+                 </div>
         <!-- <div class="d-flex align-items-center">
           <a class="nav-link" href="#login" routerLink="/login">Logins</a>
         </div> -->
@@ -24,13 +24,13 @@
           <a class="nav-link" href="#dashboard" routerLink="/dashboard">dashboards</a>
         </div>
         <div class="nav-item">
-          <a class="nav-link" href="#teams" routerLink="/teams">Teams</a>
+          <a class="nav-link" href="#teams" routerLink="/teams">AdminPanel</a>
         </div>
         <div class="nav-item">
           <a class="nav-link" href="#apps" routerLink="/apps">AddUser</a>
         </div>
           <div>
-          <button class="btn btn-primary" (click)="openPopup()">Create</button>
+          <button class="btn btn-dark" (click)="openPopup()">Create</button>
         </div>
       </div>
       
@@ -41,7 +41,20 @@
         <mat-icon matSuffix >search</mat-icon>
          </mat-form-field>
 
-      </div>  
+
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            GoTo
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#teamwork" routerLink="/teamwork">signup</a></li>
+            <li><a class="dropdown-item" href="#projects" routerLink="/projects">projects</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#dashboard" routerLink="/dashboard">dashboard</a></li>
+          </ul>
+        </li>     
+
+          </div>  
     </div>
   </nav>
 </div>

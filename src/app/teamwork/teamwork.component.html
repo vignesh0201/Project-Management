@@ -16,7 +16,7 @@
       <input type="text" formControlName="role" id="role" class="form-control" placeholder="admin/team">
       <span class="error" *ngIf="role?.touched && role?.invalid ">Enter a valid response</span>    
  </div> 
-     <button [disabled]="!registerForm.valid">register</button>
+     <button class="btn btn-dark" [disabled]="!registerForm.valid">register</button>
 </form>
 </div>
 

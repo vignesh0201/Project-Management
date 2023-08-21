@@ -11,26 +11,26 @@ import { CardComponent } from '../card/card.component';
 })
 export class AppsComponent {
 
-  // userProfile: any = {
-  //   email: 'user@example.com',
-  //   username: 'exampleUser'
-  // };
+  userProfile: any = {
+    email: 'user@example.com',
+    username: 'exampleUser'
+  };
 
-  // constructor(private dialog: MatDialog) {}
+  constructor(private dialog: MatDialog) {}
 
-  // openInviteModal(): void {
-  //   const dialogRef = this.dialog.open(CardComponent, {
-  //     width: '300px',
-  //     data: { username: this.userProfile.username }
-  //   });
+  openInviteModal(): void {
+    const dialogRef = this.dialog.open(CardComponent, {
+      width: '300px',
+      data: { username: this.userProfile.username }
+    });
 
-  //   dialogRef.afterClosed().subscribe(result => {
-  //     if (result) {
-  //       // Perform invitation logic here
-  //       console.log('Invitation sent to:', result);
-  //     }
-  //   });
-  // }
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        // Perform invitation logic here
+        console.log('Invitation sent to:', result);
+      }
+    });
+  }
 
  
 }

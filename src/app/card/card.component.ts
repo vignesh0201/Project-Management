@@ -9,21 +9,21 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 })
 export class CardComponent {
  
-  // invitationData = {
-  //   recipient: ''
-  // };
+  invitationData = {
+    recipient: ''
+  };
 
-  // constructor(
-  //   public dialogRef: MatDialogRef<CardComponent>,
-  //   @Inject(MAT_DIALOG_DATA) public data: any
-  // ) {}
+  constructor(
+    public dialogRef: MatDialogRef<CardComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: any
+  ) {}
 
-  // inviteUser(): void {
-  //   // Perform form validation here and then close the dialog
-  //   if (this.invitationData.recipient) {
-  //     this.dialogRef.close(this.invitationData.recipient);
-  //   }
-  // }
+  inviteUser(): void {
+    // Perform form validation here and then close the dialog
+    if (this.invitationData.recipient) {
+      this.dialogRef.close(this.invitationData.recipient);
+    }
+  }
 
   
  

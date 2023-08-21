@@ -14,7 +14,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {CdkDrag, CdkDropList, DragDropModule} from '@angular/cdk/drag-drop';
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -27,6 +27,7 @@ import {MatCardModule} from '@angular/material/card';
 import { CreatedialogComponent } from './apps/createdialog/createdialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { CardComponent } from './card/card.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 
 
@@ -61,6 +62,9 @@ import { CardComponent } from './card/card.component';
       MatProgressBarModule,
       DragDropModule,
       MatInputModule,
+      MatSidenavModule,
+
+       
   
     ],
     
@@ -68,5 +72,5 @@ import { CardComponent } from './card/card.component';
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  
+ 
  }
